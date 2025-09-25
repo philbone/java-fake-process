@@ -4,8 +4,7 @@ public class IdleState implements ProcessState
 {
     @Override
     public void handle(ProcessContext context) {
-        System.out.print("Esperando para iniciar...");
-        System.out.flush();
+        System.out.println("Esperando para iniciar...");
     }
 
     @Override

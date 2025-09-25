@@ -7,6 +7,7 @@ public class ProcessContext
     private int steps = 10;
     private int delayMs = 300;
     private int initialDelayMs = 0;
+    private String label = "";
 
     public ProcessContext(AnimationStrategy animation) {
         this.animation = animation;
@@ -23,6 +24,14 @@ public class ProcessContext
 
     public void setInitialDelay(int initialDelayMs) {
         this.initialDelayMs = initialDelayMs;
+    }
+    
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public String getLabel() {
+        return label;
     }
 
     public void run() throws InterruptedException {
